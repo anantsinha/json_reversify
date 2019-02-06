@@ -1,0 +1,15 @@
+{
+  "name": "json_reversify",
+  "version": "1.0.0",
+  "description": "Reverse order of values in a json file.",
+  "main": "json_reversify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+  "chai": "*",
+  "mocha": "*"
+},
+  "author": "Anant Aaradhya Sinha",
+  "license": "ISC"
+}
