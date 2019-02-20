@@ -4,7 +4,7 @@
   "description": "Reverse order of values in a json file.",
   "main": "json_reversify.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Anant Aaradhya Sinha",
   "license": "ISC",

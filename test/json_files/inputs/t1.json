@@ -2,19 +2,19 @@
   "result": [
     {
         "courses_dept": "epse",
-        "courses_avg": 97.09
+        "courses_avg": 92.19
     },
     {
         "courses_dept": "math",
-        "courses_avg": 97.09
+        "courses_avg": 93.00
+    },
+    {
+      "courses_dept": "epse",
+      "courses_avg": 88.50
     },
     {
         "courses_dept": "math",
-        "courses_avg": 97.09
-    },
-    {
-        "courses_dept": "epse",
-        "courses_avg": 97.09
+        "courses_avg": 77.00
     }
     ]
 }

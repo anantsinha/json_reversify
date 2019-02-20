@@ -1,25 +1,20 @@
 const expect = require("chai").expect;
 const reversify = require("../json_reversify.js");
+const readJsonFile = require("./readJsonFile");
 const fs = require("fs");
 
 describe("reversify", () => {
-  it("Should reverse file", ()=> {
-    let resultFile = fs.readFile(".test/json_files/outputs/t1_result.json", (err,data) => {
-      try{
-        let resultPromise = reversify("./test/json_files/inputs/t1.json");
+  it("Should reverse file", async ()=> {
+      let result = "";
+      let expectedResult = "";
 
-        resultPromise.then((data) =>{
-          console.log('Data is: ', data);
-          let expectedResult = JSON.stringify(data);
-        })
-        .catch((err) => {
-          throw (err);
-        });
+      try{
+          result = await reversify("./test/json_files/inputs/t1.json");
+            expectedResult = await readJsonFile("./test/json_files/outputs/t1.json");
       } catch(err) {
         throw (err);
       } finally {
-          expect(result).to.be.equal(expectedResult);
+          expect(result).to.equal(expectedResult);
       }
-    });
   });
 });
