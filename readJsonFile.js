@@ -4,7 +4,6 @@ const fs = require('fs');
 const readJsonFile = async (path) => {
     // TODO: complete function definition
     return new Promise ( (resolve, reject) => {
-        console.log('readJsonFile ran');
         let file = fs.readFile(path, 'utf8', (err,data) => {
             if (err) {
                 reject(err);
